@@ -1,0 +1,967 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Programming Techniques. Laboratory work №2 .: Файл Lab_MP2_doc.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Programming Techniques. Laboratory work №2 .<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Laboratory work aimed at the implementation, application and comparison of the performance of finding algorithms.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл Lab_MP2_doc.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_prepod.html">Prepod</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени, а также обладающий методами для взаимодействия объектов класса.  <a href="class_prepod.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ad25e2ee9b4ef33f41ce2d80c106bf13e"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#ad25e2ee9b4ef33f41ce2d80c106bf13e">operator&lt;&lt;</a> (ostream &amp;out, const <a class="el" href="class_prepod.html">Prepod</a> &amp;A)</td></tr>
+<tr class="separator:ad25e2ee9b4ef33f41ce2d80c106bf13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af891b74f0d158940c5b82250dfa6f6be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#af891b74f0d158940c5b82250dfa6f6be">operator==</a> (const <a class="el" href="class_prepod.html">Prepod</a> &amp;A, const <a class="el" href="class_prepod.html">Prepod</a> &amp;B)</td></tr>
+<tr class="memdesc:af891b74f0d158940c5b82250dfa6f6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор равенства для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>.  <br /></td></tr>
+<tr class="separator:af891b74f0d158940c5b82250dfa6f6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64f2b19eced30a856d47c17a8c22688d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#a64f2b19eced30a856d47c17a8c22688d">operator!=</a> (const <a class="el" href="class_prepod.html">Prepod</a> &amp;A, const <a class="el" href="class_prepod.html">Prepod</a> &amp;B)</td></tr>
+<tr class="memdesc:a64f2b19eced30a856d47c17a8c22688d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор неравенства для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>.  <br /></td></tr>
+<tr class="separator:a64f2b19eced30a856d47c17a8c22688d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3b409f9d4af9d58305454b12d4c4a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#abd3b409f9d4af9d58305454b12d4c4a6">operator&gt;</a> (const <a class="el" href="class_prepod.html">Prepod</a> &amp;A, const <a class="el" href="class_prepod.html">Prepod</a> &amp;B)</td></tr>
+<tr class="memdesc:abd3b409f9d4af9d58305454b12d4c4a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор больше для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>.  <br /></td></tr>
+<tr class="separator:abd3b409f9d4af9d58305454b12d4c4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0ac33d7d723d3a82456c0c5385d097d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#ae0ac33d7d723d3a82456c0c5385d097d">operator&lt;</a> (const <a class="el" href="class_prepod.html">Prepod</a> &amp;A, const <a class="el" href="class_prepod.html">Prepod</a> &amp;B)</td></tr>
+<tr class="memdesc:ae0ac33d7d723d3a82456c0c5385d097d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор меньше для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>.  <br /></td></tr>
+<tr class="separator:ae0ac33d7d723d3a82456c0c5385d097d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea88e0c6f70788dcc5e05782d760b385"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#aea88e0c6f70788dcc5e05782d760b385">operator&gt;=</a> (const <a class="el" href="class_prepod.html">Prepod</a> &amp;A, const <a class="el" href="class_prepod.html">Prepod</a> &amp;B)</td></tr>
+<tr class="memdesc:aea88e0c6f70788dcc5e05782d760b385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор больше либо равно для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>.  <br /></td></tr>
+<tr class="separator:aea88e0c6f70788dcc5e05782d760b385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642edc631b1004789d56e85431bf2b3e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#a642edc631b1004789d56e85431bf2b3e">operator&lt;=</a> (const <a class="el" href="class_prepod.html">Prepod</a> &amp;A, const <a class="el" href="class_prepod.html">Prepod</a> &amp;B)</td></tr>
+<tr class="memdesc:a642edc631b1004789d56e85431bf2b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор меньше либо равно для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>.  <br /></td></tr>
+<tr class="separator:a642edc631b1004789d56e85431bf2b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f34bfe05501d86c0f93b36442e57e15"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8f34bfe05501d86c0f93b36442e57e15"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#a8f34bfe05501d86c0f93b36442e57e15">bubbleSort</a> (T *A, size_t n)</td></tr>
+<tr class="memdesc:a8f34bfe05501d86c0f93b36442e57e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция сортировки Bubble Sort.  <br /></td></tr>
+<tr class="separator:a8f34bfe05501d86c0f93b36442e57e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5976d5d35ac4485a02efe7b8ca2e278e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5976d5d35ac4485a02efe7b8ca2e278e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#a5976d5d35ac4485a02efe7b8ca2e278e">quickSort</a> (T *A, size_t n)</td></tr>
+<tr class="memdesc:a5976d5d35ac4485a02efe7b8ca2e278e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция сортировки Quick Sort.  <br /></td></tr>
+<tr class="separator:a5976d5d35ac4485a02efe7b8ca2e278e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64883cde588f4c5461e5299a0e2eda4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa64883cde588f4c5461e5299a0e2eda4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#aa64883cde588f4c5461e5299a0e2eda4">mergeSort</a> (T *A, size_t n)</td></tr>
+<tr class="memdesc:aa64883cde588f4c5461e5299a0e2eda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция сортировки Merge Sort.  <br /></td></tr>
+<tr class="separator:aa64883cde588f4c5461e5299a0e2eda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54156e029a198c91eb4e4b636a9125aa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a54156e029a198c91eb4e4b636a9125aa"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#a54156e029a198c91eb4e4b636a9125aa">linearSearch</a> (T *A, size_t n, string keyName)</td></tr>
+<tr class="memdesc:a54156e029a198c91eb4e4b636a9125aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция прямого поиска  <br /></td></tr>
+<tr class="separator:a54156e029a198c91eb4e4b636a9125aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9537d7e20c158f3f2cbed0e2b4653503"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9537d7e20c158f3f2cbed0e2b4653503"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#a9537d7e20c158f3f2cbed0e2b4653503">binarySearch</a> (T *A, size_t n, string keyName)</td></tr>
+<tr class="memdesc:a9537d7e20c158f3f2cbed0e2b4653503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонная функция бинарного поиска  <br /></td></tr>
+<tr class="separator:a9537d7e20c158f3f2cbed0e2b4653503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_lab___m_p2__doc_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a9537d7e20c158f3f2cbed0e2b4653503" name="a9537d7e20c158f3f2cbed0e2b4653503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9537d7e20c158f3f2cbed0e2b4653503">&#9670;&#160;</a></span>binarySearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int binarySearch </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция бинарного поиска </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Массив</td><td>A, в котором будет производиться поиск, размер массива n и ключ поиска keyName </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс искомого элемента в массиве. -1 если элемент с таким ключом отсутствует </dd></dl>
+
+</div>
+</div>
+<a id="a8f34bfe05501d86c0f93b36442e57e15" name="a8f34bfe05501d86c0f93b36442e57e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f34bfe05501d86c0f93b36442e57e15">&#9670;&#160;</a></span>bubbleSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void bubbleSort </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция сортировки Bubble Sort. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Сортируемый</td><td>массив в виде указателя на первый элемент и размер массива </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращаемое значение отсутствует </dd></dl>
+
+</div>
+</div>
+<a id="a54156e029a198c91eb4e4b636a9125aa" name="a54156e029a198c91eb4e4b636a9125aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54156e029a198c91eb4e4b636a9125aa">&#9670;&#160;</a></span>linearSearch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int linearSearch </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>keyName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция прямого поиска </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Массив</td><td>A, в котором будет производиться поиск, размер массива n и ключ поиска keyName </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс искомого элемента в массиве. -1 если элемент с таким ключом отсутствует </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">@brief Функция main
+@param Считывание выборок разного объема из файлов, выбор метода поиска и вывод на экран затраченного на поиск времени
+@return Возвращаемое значение - код завершения программы
+
+Реализация:
+
+@code
+int main(){
+setlocale(LC_ALL, "Russian");
+
+Prepod *data100 = new Prepod[100],
+       *data500 = new Prepod[500],
+       *data1000 = new Prepod[1000],
+       *data5000 = new Prepod[5000],
+       *data10000 = new Prepod[10000],
+       *data50000 = new Prepod[50000],
+       *data100000 = new Prepod[100000];
+
+ifstream in100("100.txt");
+
+if (in100.is_open())
+    for (size_t i = 0; i &lt; 100; i++)
+        data100[i] = Prepod(in100);
+in100.close();
+
+
+ifstream in500("500.txt");
+if (in500.is_open())
+    for (size_t i = 0; i &lt; 500; i++)
+        data500[i] = Prepod(in500);
+in500.close();
+
+ifstream in1000("1000.txt");
+if (in1000.is_open())
+    for (size_t i = 0; i &lt; 1000; i++)
+        data1000[i] = Prepod(in1000);
+in1000.close();
+
+ifstream in5000("5000.txt");
+if (in5000.is_open())
+    for (size_t i = 0; i &lt; 5000; i++)
+        data5000[i] = Prepod(in5000);
+in5000.close();
+
+ifstream in10000("10000.txt");
+if (in10000.is_open())
+    for (size_t i = 0; i &lt; 10000; i++)
+        data10000[i] = Prepod(in10000);
+in10000.close();
+
+ifstream in50000("50000.txt");
+if (in50000.is_open())
+    for (size_t i = 0; i &lt; 50000; i++)
+        data50000[i] = Prepod(in50000);
+in50000.close();
+
+ifstream in100000("100000.txt");
+if (in100000.is_open())
+    for (size_t i = 0; i &lt; 100000; i++)
+        data100000[i] = Prepod(in100000);
+in100000.close();
+
+int choice;
+cout &lt;&lt; "Search:\n1. Linear\n2. Binary with unsorted array\n3. Binary with sorted array\n4. Multimap\n";
+cin &gt;&gt; choice;
+
+if (choice == 1){
+    int tmp;
+
+    cout &lt;&lt; "Data sampling with a volume of 100:\t";
+    auto start_t = chrono::steady_clock::now();
+    tmp = linearSearch(data100, 100, "fmw");
+    auto end_t = chrono::steady_clock::now();
+    auto elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 500:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = linearSearch(data500, 500, "byu");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 1000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = linearSearch(data1000, 1000, "lga");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 5000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = linearSearch(data5000, 5000, "ocy");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 10000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = linearSearch(data10000, 10000, "wmc");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 50000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = linearSearch(data50000, 50000, "thl");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 100000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = linearSearch(data100000, 100000, "ntx");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+}
+
+if (choice == 2){
+    int tmp;
+
+    cout &lt;&lt; "Data sampling with a volume of 100:\t";
+    auto start_t = chrono::steady_clock::now();
+    quickSort(data100, 100);
+    tmp = binarySearch(data100, 100, "fmw");
+    auto end_t = chrono::steady_clock::now();
+    auto elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 500:\t";
+    start_t = chrono::steady_clock::now();
+    quickSort(data500, 500);
+    tmp = binarySearch(data500, 500, "byu");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 1000:\t";
+    start_t = chrono::steady_clock::now();
+    quickSort(data1000, 1000);
+    tmp = binarySearch(data1000, 1000, "lga");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 5000:\t";
+    start_t = chrono::steady_clock::now();
+    quickSort(data5000, 5000);
+    tmp = binarySearch(data5000, 5000, "ocy");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 10000:\t";
+    start_t = chrono::steady_clock::now();
+    quickSort(data10000, 10000);
+    tmp = binarySearch(data10000, 10000, "wmc");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 50000:\t";
+    start_t = chrono::steady_clock::now();
+    quickSort(data50000, 50000);
+    tmp = binarySearch(data50000, 50000, "thl");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 100000:\t";
+    start_t = chrono::steady_clock::now();
+    quickSort(data100000, 100000);
+    tmp = binarySearch(data100000, 100000, "ntx");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+}
+
+if (choice == 3){
+    int tmp;
+
+    quickSort(data100, 100);
+    quickSort(data500, 500);
+    quickSort(data1000, 1000);
+    quickSort(data5000, 5000);
+    quickSort(data10000, 10000);
+    quickSort(data50000, 50000);
+    quickSort(data100000, 100000);
+
+    cout &lt;&lt; "Data sampling with a volume of 100:\t";
+    auto start_t = chrono::steady_clock::now();
+
+    tmp = binarySearch(data100, 100, "fmw");
+    auto end_t = chrono::steady_clock::now();
+    auto elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 500:\t";
+    start_t = chrono::steady_clock::now();
+
+    tmp = binarySearch(data500, 500, "byu");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 1000:\t";
+    start_t = chrono::steady_clock::now();
+
+    tmp = binarySearch(data1000, 1000, "lga");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 5000:\t";
+    start_t = chrono::steady_clock::now();
+
+    tmp = binarySearch(data5000, 5000, "ocy");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 10000:\t";
+    start_t = chrono::steady_clock::now();
+
+    tmp = binarySearch(data10000, 10000, "wmc");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 50000:\t";
+    start_t = chrono::steady_clock::now();
+
+    tmp = binarySearch(data50000, 50000, "thl");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 100000:\t";
+    start_t = chrono::steady_clock::now();
+
+    tmp = binarySearch(data100000, 100000, "ntx");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+}
+
+if (choice == 4){
+    multimap &lt;string, Prepod&gt; map100 = {},
+                              map500 = {},
+                              map1000 = {},
+                              map5000 = {},
+                              map10000 = {},
+                              map50000 = {},
+                              map100000 = {};
+
+
+    for (int i = 0; i &lt; 100; i++)
+        map100.insert(pair &lt;string, Prepod&gt;(data100[i].getFname(), data100[i]));
+
+    for (int i = 0; i &lt; 500; i++)
+        map500.insert(pair &lt;string, Prepod&gt;(data500[i].getFname(), data500[i]));
+
+    for (int i = 0; i &lt; 1000; i++)
+        map1000.insert(pair &lt;string, Prepod&gt;(data1000[i].getFname(), data1000[i]));
+
+    for (int i = 0; i &lt; 5000; i++)
+        map5000.insert(pair &lt;string, Prepod&gt;(data5000[i].getFname(), data5000[i]));
+
+    for (int i = 0; i &lt; 10000; i++)
+        map10000.insert(pair &lt;string, Prepod&gt;(data10000[i].getFname(), data10000[i]));
+
+    for (int i = 0; i &lt; 50000; i++)
+        map50000.insert(pair &lt;string, Prepod&gt;(data50000[i].getFname(), data50000[i]));
+
+    for (int i = 0; i &lt; 100000; i++)
+        map100000.insert(pair &lt;string, Prepod&gt;(data100000[i].getFname(), data100000[i]));
+
+    cout &lt;&lt; "Data sampling with a volume of 100:\t";
+    auto start_t = chrono::steady_clock::now();
+    auto tmp = map100.find("fmw");
+    auto end_t = chrono::steady_clock::now();
+    auto elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 500:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = map500.find("byu");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 1000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = map1000.find("lga");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 5000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = map5000.find("ocy");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 10000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = map10000.find("wmc");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 50000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = map50000.find("thl");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+
+    cout &lt;&lt; "Data sampling with a volume of 100000:\t";
+    start_t = chrono::steady_clock::now();
+    tmp = map100000.find("ntx");
+    end_t = chrono::steady_clock::now();
+    elapsed_ms = std::chrono::duration_cast&lt;std::chrono::nanoseconds&gt;(end_t - start_t);
+    cout &lt;&lt; elapsed_ms.count() &lt;&lt; " nanoseconds\n";
+}
+</pre><p> }  </p>
+
+</div>
+</div>
+<a id="aa64883cde588f4c5461e5299a0e2eda4" name="aa64883cde588f4c5461e5299a0e2eda4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64883cde588f4c5461e5299a0e2eda4">&#9670;&#160;</a></span>mergeSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void mergeSort </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция сортировки Merge Sort. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Сортируемый</td><td>массив в виде указателя на первый элемент и размер массива </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращаемое значение отсутствует </dd></dl>
+
+</div>
+</div>
+<a id="a64f2b19eced30a856d47c17a8c22688d" name="a64f2b19eced30a856d47c17a8c22688d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64f2b19eced30a856d47c17a8c22688d">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator!= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор неравенства для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Две</td><td>константные ссылки на сравниваемые объекты </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>False, если поля объектов равны, True иначе. </dd></dl>
+
+</div>
+</div>
+<a id="ae0ac33d7d723d3a82456c0c5385d097d" name="ae0ac33d7d723d3a82456c0c5385d097d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0ac33d7d723d3a82456c0c5385d097d">&#9670;&#160;</a></span>operator&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор меньше для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Две</td><td>константные ссылки на сравниваемые объекты </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если при сравнении полей по приоритетам, некоторое поле первого объекта лексически меньше, чем соответствующее поле второго объекта, False иначе. </dd></dl>
+
+</div>
+</div>
+<a id="ad25e2ee9b4ef33f41ce2d80c106bf13e" name="ad25e2ee9b4ef33f41ce2d80c106bf13e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25e2ee9b4ef33f41ce2d80c106bf13e">&#9670;&#160;</a></span>operator&lt;&lt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream &amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>out</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Дружественный оператор вывода полей класса в поток </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Ссылка</td><td>на поток вывода и константная ссылка на выводимый объект </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на поток вывода для возможности дальнейших преобразований компилятором</dd></dl>
+<p>Реализация:</p>
+<div class="fragment"><div class="line">ostream&amp; <a class="code hl_function" href="_lab___m_p2__doc_8cpp.html#ad25e2ee9b4ef33f41ce2d80c106bf13e">operator&lt;&lt; </a>(ostream&amp; out, <span class="keyword">const</span> <a class="code hl_class" href="class_prepod.html">Prepod</a>&amp; A){</div>
+<div class="line">    out &lt;&lt; A.fname &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    out &lt;&lt; A.lname &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    out &lt;&lt; A.mname &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    out &lt;&lt; A.faculty &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    out &lt;&lt; A.adegree &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    out &lt;&lt; A.atitle &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line">    out &lt;&lt; endl;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> out;</div>
+<div class="line">}</div>
+<div class="ttc" id="a_lab___m_p2__doc_8cpp_html_ad25e2ee9b4ef33f41ce2d80c106bf13e"><div class="ttname"><a href="_lab___m_p2__doc_8cpp.html#ad25e2ee9b4ef33f41ce2d80c106bf13e">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;out, const Prepod &amp;A)</div><div class="ttdef"><b>Definition:</b> Lab_MP2_doc.cpp:263</div></div>
+<div class="ttc" id="aclass_prepod_html"><div class="ttname"><a href="class_prepod.html">Prepod</a></div><div class="ttdoc">Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...</div><div class="ttdef"><b>Definition:</b> Lab_MP2_doc.cpp:14</div></div>
+</div><!-- fragment --> 
+</div>
+</div>
+<a id="a642edc631b1004789d56e85431bf2b3e" name="a642edc631b1004789d56e85431bf2b3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a642edc631b1004789d56e85431bf2b3e">&#9670;&#160;</a></span>operator&lt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&lt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор меньше либо равно для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Две</td><td>константные ссылки на сравниваемые объекты </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если при сравнении полей по приоритетам, некоторое поле первого объекта лексически меньше, чем соответствующее поле второго объекта, или объекты равны, False иначе. </dd></dl>
+
+</div>
+</div>
+<a id="af891b74f0d158940c5b82250dfa6f6be" name="af891b74f0d158940c5b82250dfa6f6be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af891b74f0d158940c5b82250dfa6f6be">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор равенства для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Две</td><td>константные ссылки на сравниваемые объекты </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если поля объектов равны, False иначе. </dd></dl>
+
+</div>
+</div>
+<a id="abd3b409f9d4af9d58305454b12d4c4a6" name="abd3b409f9d4af9d58305454b12d4c4a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3b409f9d4af9d58305454b12d4c4a6">&#9670;&#160;</a></span>operator&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt; </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор больше для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Две</td><td>константные ссылки на сравниваемые объекты </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если при сравнении полей по приоритетам, некоторое поле первого объекта лексически больше, чем соответствующее поле второго объекта, False иначе. </dd></dl>
+
+</div>
+</div>
+<a id="aea88e0c6f70788dcc5e05782d760b385" name="aea88e0c6f70788dcc5e05782d760b385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea88e0c6f70788dcc5e05782d760b385">&#9670;&#160;</a></span>operator&gt;=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool operator&gt;= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_prepod.html">Prepod</a> &amp;&#160;</td>
+          <td class="paramname"><em>B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор больше либо равно для двух объектов класса <a class="el" href="class_prepod.html" title="Класс Преподавателя, хранящий информацию о ФИО, факультете, учёном звании и степени,...">Prepod</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Две</td><td>константные ссылки на сравниваемые объекты </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>True, если при сравнении полей по приоритетам, некоторое поле первого объекта лексически больше, чем соответствующее поле второго объекта, или объекты равны, False иначе. </dd></dl>
+
+</div>
+</div>
+<a id="a5976d5d35ac4485a02efe7b8ca2e278e" name="a5976d5d35ac4485a02efe7b8ca2e278e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5976d5d35ac4485a02efe7b8ca2e278e">&#9670;&#160;</a></span>quickSort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void quickSort </td>
+          <td>(</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Шаблонная функция сортировки Quick Sort. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Сортируемый</td><td>массив в виде указателя на первый элемент и размер массива </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Возвращаемое значение отсутствует </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
